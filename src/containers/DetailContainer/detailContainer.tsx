@@ -1,5 +1,5 @@
 import Location from "../../components/Map/Location";
-import { Theme, withStyles } from "@material-ui/core/styles";
+import { createStyles, Theme, withStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import * as React from "react";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -7,31 +7,32 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { IRestaurant } from "../../types";
 
-const styles = (theme: Theme) => ({
-	root: {
-		flexGrow: "1"
-	},
-	detailName: {
-		color: "white",
-		fontFamily: "Montserrat, san-serif",
-		fontWeight: "500",
-		fontSize: "2rem"
-	},
-	detailCategory: {
-		color: "white",
-		fontFamily: "Montserrat",
-		fontWeight: "400",
-		fontSize: "1rem"
-	},
-	content: {
-		fontFamily: "Montserrat",
-		fontWeight: "500",
-		fontSize: "1rem"
-	},
-	cardContent: {
-		padding: "0px"
-	}
-});
+const styles = (theme: Theme) =>
+	createStyles({
+		root: {
+			flexGrow: 1
+		},
+		detailName: {
+			color: "white",
+			fontFamily: "Montserrat, san-serif",
+			fontWeight: 500,
+			fontSize: "2rem"
+		},
+		detailCategory: {
+			color: "white",
+			fontFamily: "Montserrat",
+			fontWeight: 400,
+			fontSize: "1rem"
+		},
+		content: {
+			fontFamily: "Montserrat",
+			fontWeight: 500,
+			fontSize: "1rem"
+		},
+		cardContent: {
+			padding: "0px"
+		}
+	});
 
 interface DetailProps {
 	classes?: any;
@@ -128,4 +129,4 @@ const DetailContainer: React.FC<DetailProps> = (props) => {
 	);
 };
 
-export default withStyles(styles as any)(DetailContainer);
+export default withStyles(styles)(DetailContainer);

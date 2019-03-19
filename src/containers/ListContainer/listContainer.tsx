@@ -5,7 +5,7 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Button from "@material-ui/core/Button";
-import { Theme, withStyles } from "@material-ui/core/styles";
+import { createStyles, Theme, withStyles } from "@material-ui/core/styles";
 import { IApplicationProps } from "../../actions/restaurants";
 import { IRestaurant } from "../../types";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
@@ -13,31 +13,32 @@ import { Search } from "../../components/Search";
 
 // TODO: MUI theme
 // TODO: add responsive breakpoints with withWidth HOC method
-const styles = (theme: Theme) => ({
-	root: {
-		flexGrow: "1"
-	},
-	detail: {
-		display: "none"
-	},
-	avatar: {
-		filter: "invert(100%)"
-	},
-	listText: {
-		color: "#FFF"
-	},
-	loading: {
-		marginTop: "25vh",
-		position: "absolute"
-	},
-	primary: {
-		color: "#FFF"
-	},
-	links: {
-		color: "#FFF",
-		textDecoration: "none"
-	}
-});
+const styles = (theme: Theme) =>
+	createStyles({
+		root: {
+			flexGrow: 1
+		},
+		detail: {
+			display: "none"
+		},
+		avatar: {
+			filter: "invert(100%)"
+		},
+		listText: {
+			color: "#FFF"
+		},
+		loading: {
+			marginTop: "25vh",
+			position: "absolute"
+		},
+		primary: {
+			color: "#FFF"
+		},
+		links: {
+			color: "#FFF",
+			textDecoration: "none"
+		}
+	});
 
 interface IRestaurantListProps extends IApplicationProps {
 	classes: any;
@@ -111,4 +112,4 @@ class ListContainer extends React.Component<IRestaurantListProps, {}> {
 		}
 	};
 }
-export default withStyles(styles as any)(ListContainer);
+export default withStyles(styles)(ListContainer);
