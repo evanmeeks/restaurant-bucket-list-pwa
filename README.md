@@ -1,4 +1,4 @@
-### Restaurant Bucket List MVP Progressive Web App -🍷🍤 🥡 🔍 - A React Native using GeoLocation API, the Foursquare API,  Material UI, TypeScript, Redux, and Redux Saga
+### Restaurant Bucket List MVP - PWA -🍷🍤 🥡 🔍 - A React Progressive Web App using GeoLocation API, the Foursquare API,  Material UI, TypeScript, Redux, and Redux Saga
 
 <img src="https://raw.githubusercontent.com/evanmeeks/foursquare-api-test/master/assets/screen1.png" width="40%" alt="Restuarant Bucket List Screen" />
 <img src="https://raw.githubusercontent.com/evanmeeks/foursquare-api-test/master/assets/screen2.png" width="40%" alt="Restuarant Bucket List Screen" />
