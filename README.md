@@ -1,4 +1,4 @@
-# Bucket List MVP PWA - A React App using GeoLocation API, the Foursquare API, React Native Elements, TypeScript, Redux, and Redux Saga example with Material-UI, TypeScript, Redux and Redux Saga
+### Restaurant Bucket List MVP Progressive Web App -🍷🍤 🥡 🔍 - A React Native using GeoLocation API, the Foursquare API,  Material UI, TypeScript, Redux, and Redux Saga
 
 Inspired by:
  * [Material-UI](https://github.com/mui-org/material-ui)
