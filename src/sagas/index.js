@@ -3,7 +3,7 @@ import { all, put, takeLatest, take } from "redux-saga/effects";
 import { RestaurantActionTypes, GeolocationActionTypes } from "../types";
 
 export const locationChannel = channel();
-
+/* eslint-disable-next-line */
 export function* fetchCurrentPosition(options) {
 	const { query } = options;
 
@@ -17,7 +17,7 @@ export function* fetchCurrentPosition(options) {
 		options
 	);
 }
-
+/* eslint-disable-next-line */
 export function* watchCurrentPosition(options) {
 	locationChannel.put({ type: "REDUX_SAGA_LOCATION_ACTION_REQUEST" });
 
