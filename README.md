@@ -20,6 +20,8 @@ Inspired by:
 - [x] [Redux Logger](https://github.com/LogRocket/redux-logger)
 - [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 - [x] PWA Support
+- [x] [Background sync](https://developers.google.com/web/updates/2015/12/background-sync)
+
 
 ## Roadmap
 
